@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Easyops</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <form action="" class="form">
+        <label for="name">Person's Name</label>
+        <div class="name">
+          <input type="text" name="fName" id="fName" placeholder="First Name" />
+          <input type="text" name="lName" id="lName" placeholder="Last Name" />
+        </div>
+        <label for="phoneNo">Contact Number</label>
+        <input type="tel" name="phoneNo" id="phoneNo" placeholder="Phone No." />
+        <button id="submitBtn">Save</button>
+      </form>
+      <div class="search">
+        <i style="font-size: 20px" class="fa">&#xf002;</i>
+
+        <input type="text" id="search" placeholder="Type and press enter..." />
+      </div>
+      <table id="users">
+        <thead>
+          <tr>
+            <th>S.no</th>
+            <th id="name-col">Name</th>
+            <th>Phone No</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+      </table>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
